@@ -1,0 +1,76 @@
+// Colores principales
+
+$primary: #f6b000;
+$secondary: #541eb8;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+);
+// Create your own map
+$custom-colors: (
+    'custom-color': black,
+    'custom-color2': white,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+#logo {
+    width: 40px;
+    height: 32px;
+}
+
+h1 {
+    color: $secondary;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+h2 {
+    color: $secondary;
+}
+
+.homeContainer {
+    background-image: linear-gradient(
+            rgba(20, 11, 31, 0.6),
+            rgba(255, 255, 255, 0.95)
+        ),
+        url(../resources/interior-2685521.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.homeContainer > div {
+    padding-top: 12rem;
+}
+//#########################
+//#######  ABOUT ############
+//#########################
+
+.aboutMain {
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.9)
+        ),
+        url(../resources/pexels-pixabay-163064.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100em;
+}
+
+//#########################
+//#######  TOOL ############
+//#########################
+
+.col input {
+    width: 7rem;
+}
+// Required
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$theme-colors: map-remove($theme-colors, 'info', 'light', 'dark');
+
+@import '../node_modules/bootstrap/scss/maps';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
