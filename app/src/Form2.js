@@ -1,24 +1,10 @@
 import './App.css';
 import { useState } from 'react';
 
-const request = async (data, onSuccess) => {
+/* const request = async (data) => {
     console.log(data);
-    try {
-        const response = await fetch('http://localhost:8000/form', {
-            method: 'GET',
-        });
-
-        const body = await response.json();
-
-        if (response.ok) {
-            onSuccess(body);
-        } else {
-            throw new Error(body.message);
-        }
-    } catch (error) {
-        console.error(error);
-    }
-};
+    const response = await fetch('http://localhost:8080/form');
+}; */
 
 function Form() {
     const [form, setForm] = useState({
@@ -36,6 +22,10 @@ function Form() {
         input12: '',
         input13: '',
     });
+
+    const request = async (data) => {
+        console.log(data);
+    };
     return (
         <div id='root'>
             <legend>Vivienda</legend>

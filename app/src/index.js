@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+/* import App from './App'; */
 import Form from './Form';
+/* import Form2 from './Form2'; */
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,6 +11,7 @@ root.render(
     <React.StrictMode>
         {/*         <App /> */}
         <Form />
+        {/*         <Form2 /> */}
     </React.StrictMode>
 );
 
