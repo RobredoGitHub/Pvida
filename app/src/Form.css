@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+fieldset {
+    background-color: #f4f1ed;
+
+    border-color: darkgoldenrod;
+    border: 9px groove (internal value);
+    border-radius: 7px;
+}
+legend {
+    color: darkblue;
+    font-weight: bold;
+}
+p {
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+input {
+    width: 4rem;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}

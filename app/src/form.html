@@ -141,3 +141,42 @@
         </div>
     </fieldset>
 </fieldset>
+<form action="get">
+    <img src={logo} className='App-logo' alt='logo' />
+    <p>
+        Edit <code>src/App.js</code> and save to reload.
+    </p>
+    <input
+        type='number'
+        value={form.input1}
+        onChange={(e) =>
+            setForm((lastValue) => ({
+                ...lastValue,
+                input1: e.target.value,
+            }))
+        }
+    />
+    <input
+        type='number'
+        value={form.input2}
+        onChange={(e) =>
+            setForm((lastValue) => ({
+                ...lastValue,
+                input2: e.target.value,
+            }))
+        }
+    />
+
+    <button
+        onClick={async () => {
+            await request(form);
+        }} 
+        onSubmit={(ev) => {
+            ev.preventDefault();
+            console.log('hola');
+        }}
+    >
+        {' '}
+        TEST{' '}
+    </button>
+</form>
