@@ -1,34 +1,67 @@
+.Header{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+.document{
+    padding-top: 1rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: rgb(237, 237, 217);
+}
 h1 {
+    font-size: 60px;
     text-align: center;
+    color: rgb(0, 0, 100);
 }
 h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    color: rgb(12, 31, 48);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 1rem;
 }
 h3 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 fieldset {
-    background-color: #f4f1ed;
-
-    border-color: darkgoldenrod;
+    background-color: rgb(240, 239, 239);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-color: rgb(93, 68, 2);
     border: 9px groove (internal value);
     border-radius: 7px;
 }
 legend {
-    color: darkblue;
+
     font-weight: bold;
 }
+label{
+
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
 p {
-    margin-top: 2px;
-    margin-bottom: 4px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 input {
-    width: 4rem;
+    height: 1.2rem;
+    width: 8rem;
     border-radius: 3px;
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 5px;
     margin-right: 5px;
+}
+.submitDiv > button{
+    margin-left: auto;
+    margin-right: auto;
 }

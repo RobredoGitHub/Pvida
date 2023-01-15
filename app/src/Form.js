@@ -1,144 +1,146 @@
 import './Form.css';
 import { useState } from 'react';
 
-function vestibulo1(x) {
-    if (x >= 150) {
-        const vest1 = 'El elemento1 se encuentra adaptado';
-        console.log(vest1);
-    } else {
-        const vest1 = 'El elemento1 no se encuentra adaptado';
-        console.log(vest1);
-    }
-}
-function vestibulo2(x) {
-    if (x >= 150) {
-        const vest2 = 'El elemnto2 se encuentra adaptado';
-        console.log(vest2);
-    } else {
-        const vest2 = 'El elemnto2 no se encuentra adaptado';
-        console.log(vest2);
-    }
-}
 
-function pasillo1(x) {
-    if (x >= 120) {
-        const pas1 = 'El elemnto3 se encuentra adaptado';
-        console.log(pas1);
-    } else {
-        const pas1 = 'El elemnto3 no se encuentra adaptado';
-        console.log(pas1);
-    }
-}
 
-function pasillo2(x) {
-    if (x <= 100) {
-        const pas2 = 'El elemento4 se encuentra adaptado';
-        console.log(pas2);
-    } else {
-        const pas2 = 'El elemento4 no se encuentra adaptado';
-        console.log(pas2);
-    }
-}
+// function vestibulo1(x) {
+//     if (x >= 150) {
+//         const vest1 = 'El elemento1 se encuentra adaptado';
+//         console.log(vest1);
+//     } else {
+//         const vest1 = 'El elemento1 no se encuentra adaptado';
+//         console.log(vest1);
+//     }
+// }
+// function vestibulo2(x) {
+//     if (x >= 150) {
+//         const vest2 = 'El elemnto2 se encuentra adaptado';
+//         console.log(vest2);
+//     } else {
+//         const vest2 = 'El elemnto2 no se encuentra adaptado';
+//         console.log(vest2);
+//     }
+// }
 
-function pasillo3(x) {
-    if (x >= 150) {
-        const pas3 = 'El elemento5 se encuentra adaptado';
-        console.log(pas3);
-    } else {
-        const pas3 = 'El elemento5 no se encuentra adaptado';
-        console.log(pas3);
-    }
-}
+// function pasillo1(x) {
+//     if (x >= 120) {
+//         const pas1 = 'El elemnto3 se encuentra adaptado';
+//         console.log(pas1);
+//     } else {
+//         const pas1 = 'El elemnto3 no se encuentra adaptado';
+//         console.log(pas1);
+//     }
+// }
 
-function huecos1(x) {
-    if (x >= 80) {
-        const hue1 = 'El elemento6 se encuentra adaptado';
-        console.log(hue1);
-    } else {
-        const hue1 = 'El elemento6 no se encuentra adaptado';
-        console.log(hue1);
-    }
-}
+// function pasillo2(x) {
+//     if (x <= 100) {
+//         const pas2 = 'El elemento4 se encuentra adaptado';
+//         console.log(pas2);
+//     } else {
+//         const pas2 = 'El elemento4 no se encuentra adaptado';
+//         console.log(pas2);
+//     }
+// }
 
-function huecos2(x) {
-    if (x >= 120) {
-        const hue2 = 'El elemento7 se encuentra adaptado';
-        console.log(hue2);
-    } else {
-        const hue2 = 'El elemento7 no se encuentra adaptado';
-        console.log(hue2);
-    }
-}
+// function pasillo3(x) {
+//     if (x >= 150) {
+//         const pas3 = 'El elemento5 se encuentra adaptado';
+//         console.log(pas3);
+//     } else {
+//         const pas3 = 'El elemento5 no se encuentra adaptado';
+//         console.log(pas3);
+//     }
+// }
 
-function huecos3(x) {
-    if (x <= 120 && x >= 80) {
-        const hue3 = 'El elemento8 se encuentra adaptado';
-        console.log(hue3);
-    } else {
-        const hue3 = 'El elemento8 no se encuentra adaptado';
-        console.log(hue3);
-    }
-}
-function huecos4(x) {
-    if (x === 120) {
-        const hue4 = 'El elemento9 se encuentra adaptado';
-        console.log(hue4);
-    } else {
-        const hue4 = 'El elemento9 no se encuentra adaptado';
-        console.log(hue4);
-    }
-}
-function huecos5(x) {
-    if (x === 5) {
-        const hue5 = 'El elemento10 se encuentra adaptado';
-        console.log(hue5);
-    } else {
-        const hue5 = 'El elemento10 no se encuentra adaptado';
-        console.log(hue5);
-    }
-}
-function huecos6(x) {
-    if (x >= 120) {
-        const hue6 = 'El elemento11 se encuentra adaptado';
-        console.log(hue6);
-    } else {
-        const hue6 = 'El elemento11 no se encuentra adaptado';
-        console.log(hue6);
-    }
-}
-function huecos7(x) {
-    if (x >= 15) {
-        const hue7 = 'El elemento12 se encuentra adaptado';
-        console.log(hue7);
-    } else {
-        const hue7 = 'El elemento12 no se encuentra adaptado';
-        console.log(hue7);
-    }
-}
+// function huecos1(x) {
+//     if (x >= 80) {
+//         const hue1 = 'El elemento6 se encuentra adaptado';
+//         console.log(hue1);
+//     } else {
+//         const hue1 = 'El elemento6 no se encuentra adaptado';
+//         console.log(hue1);
+//     }
+// }
 
-function ventana(x) {
-    if (x <= 110 && x >= 80) {
-        const ven = 'El elemento13 se encuentra adaptado';
-        console.log(ven);
-    } else {
-        const ven = 'El elemento13 no se encuentra adaptado';
-        console.log(ven);
-    }
-}
-function anguloV(x) {
-    if (x === true) {
-        const ang = 'El elemento14 se encuentra adaptado';
-        console.log(ang);
-    } else {
-        const ang = 'El elemento14 no se encuentra adaptado';
-        console.log(ang);
-    }
-}
-function result() {
-    return console.log(
-        'El interior de su vivienda se encuentra adaptado en un 50%'
-    );
-}
+// function huecos2(x) {
+//     if (x >= 120) {
+//         const hue2 = 'El elemento7 se encuentra adaptado';
+//         console.log(hue2);
+//     } else {
+//         const hue2 = 'El elemento7 no se encuentra adaptado';
+//         console.log(hue2);
+//     }
+// }
+
+// function huecos3(x) {
+//     if (x <= 120 && x >= 80) {
+//         const hue3 = 'El elemento8 se encuentra adaptado';
+//         console.log(hue3);
+//     } else {
+//         const hue3 = 'El elemento8 no se encuentra adaptado';
+//         console.log(hue3);
+//     }
+// }
+// function huecos4(x) {
+//     if (x === 120) {
+//         const hue4 = 'El elemento9 se encuentra adaptado';
+//         console.log(hue4);
+//     } else {
+//         const hue4 = 'El elemento9 no se encuentra adaptado';
+//         console.log(hue4);
+//     }
+// }
+// function huecos5(x) {
+//     if (x === 5) {
+//         const hue5 = 'El elemento10 se encuentra adaptado';
+//         console.log(hue5);
+//     } else {
+//         const hue5 = 'El elemento10 no se encuentra adaptado';
+//         console.log(hue5);
+//     }
+// }
+// function huecos6(x) {
+//     if (x >= 120) {
+//         const hue6 = 'El elemento11 se encuentra adaptado';
+//         console.log(hue6);
+//     } else {
+//         const hue6 = 'El elemento11 no se encuentra adaptado';
+//         console.log(hue6);
+//     }
+// }
+// function huecos7(x) {
+//     if (x >= 15) {
+//         const hue7 = 'El elemento12 se encuentra adaptado';
+//         console.log(hue7);
+//     } else {
+//         const hue7 = 'El elemento12 no se encuentra adaptado';
+//         console.log(hue7);
+//     }
+// }
+
+// function ventana(x) {
+//     if (x <= 110 && x >= 80) {
+//         const ven = 'El elemento13 se encuentra adaptado';
+//         console.log(ven);
+//     } else {
+//         const ven = 'El elemento13 no se encuentra adaptado';
+//         console.log(ven);
+//     }
+// }
+// function anguloV(x) {
+//     if (x === true) {
+//         const ang = 'El elemento14 se encuentra adaptado';
+//         console.log(ang);
+//     } else {
+//         const ang = 'El elemento14 no se encuentra adaptado';
+//         console.log(ang);
+//     }
+// }
+// function result() {
+//     return console.log(
+//         'El interior de su vivienda se encuentra adaptado en un 50%'
+//     );
+// }
 
 /* function adaptado() {
     alert('su casa se encuentra adaptada en un 0%');
@@ -146,40 +148,42 @@ function result() {
 }
  */
 
-const request = async (data, onSuccess) => {
-    console.log(data);
-    try {
-        /*  vestibulo1(data.input1); */
-
-        vestibulo1(data.input1);
-        vestibulo2(data.input2);
-        pasillo1(data.input3);
-        pasillo2(data.input4);
-        pasillo3(data.input5);
-        huecos1(data.input6);
-        huecos2(data.input7);
-        huecos3(data.input8);
-        huecos4(data.input9);
-        huecos5(data.input10);
-        huecos6(data.input11);
-        huecos7(data.input12);
-        ventana(data.input13);
-        anguloV(data.input14);
-        result();
-        const response = await fetch('http://localhost:8000/form', {
-            method: 'GET',
-        });
-
-        const body = await response.json();
-
-        if (response.ok) {
-            onSuccess(body);
-        } else {
-            throw new Error(body.message);
-        }
-    } catch (error) {
-        console.error(error);
+const request = async (data) => { 
+    const rules = {
+        vestibulo: { min: 150},
+        ventana: { min: 150},
+        pasillos: { min: 120},
+        pasillos1: { min: 100},
+        dormitorio: { min: 150},
+        dormitorio1: { min: 80},
+        dormitorio2: { min: 120},
+        dormitorio3: { min: 120},
+        accesos: { min: 120},
+        accesos1: { min: 5},
+        accesos2: { min: 120},
+        accesos3: { min: 15},
+        accesos4: { min: 80, max: 110},
+        escaleras: { min: 0}
     }
+    
+    
+         const adapted =  Object.keys(data).reduce((acc, key) => {
+        const { min, max } = rules[key]
+        const value = data[key]
+        if (value < min || value > max) {
+            acc[key] = 'unadapted'
+        } else {
+            acc[key] = 'adapted'
+        }
+        return acc
+    }, {})
+    
+    
+    const rate = Object.values(adapted).filter((value) => value === 'adapted')
+    const result = Math.round((rate.length * 100)/14)
+    
+    console.log(`Su vivienda se encuentra adaptado en un ${result}%`);
+
 };
 
 function Form() {
@@ -199,15 +203,17 @@ function Form() {
         input13: '',
     });
     return (
-        <div id='root'>
-            <h1>
+    <div id='root'>
+        <div className='document'>
+                <header className='Header'>
+                    <h1>
                 Herramienta para la medición y adaptación de la vivienda en
                 interiores
-            </h1>
+                    </h1>
+                </header>
+            
+            {/* <h2>Suelos</h2>
             <fieldset>
-                <legend>
-                    <h2>Suelos</h2>
-                </legend>
                 <div className='interior'>
                     <p>
                         <strong>
@@ -219,44 +225,29 @@ function Form() {
                     <label>
                         <i>
                             En caso que quiera indicar la información en cuanto
-                            al suelo interior de su hogar marque esta casilla...
+                            al suelo interior de su hogar indique el material.
                         </i>
                     </label>{' '}
-                    <input type='checkbox' name='interior' />
                     <br></br>
                     <label>Material</label>
-                    <input type='text' name='material' disabled />
-                    <label>Tipo de pendiente</label>
-                    <select name='pendiente' id='' disabled>
-                        <option value=''>Clase 1</option>
-                        <option value=''>Clase 2</option>
-                        <option value=''>Clase 3</option>
-                    </select>
+                    <input type='text' name='material'  />
+                    
                 </div>
                 <div className='exterior'>
                     <label>
                         <i>
-                            En caso de suelo se encuentre en el exterior de su
-                            hogar marque esta casilla...
+                            Sí se trata del suelo que se encuentra en el exterior de la vivienda indique el material.
                         </i>
                     </label>
-                    <input type='checkbox' name='exterior' />
                     <br></br>
                     <label>Material</label>
-                    <input type='text' name='material' disabled />
-                    <label>Tipo de pendiente</label>
-                    <select name='pendiente' id='' disabled>
-                        <option value='1'>Clase 1</option>
-                        <option value='2'>Clase 2</option>
-                        <option value='3'>Clase 3</option>
-                    </select>
+                    <input type='text' name='material'  />
+                    
                 </div>
-            </fieldset>
-
+            </fieldset> */}
+            <h2>Vestíbulos</h2>
             <fieldset>
-                <legend>
-                    <h2>Vestíbulos</h2>
-                </legend>
+              
                 <div className='vestibulo'>
                     <div>
                         <p>
@@ -307,10 +298,9 @@ function Form() {
                     </div>
                 </div>
             </fieldset>
+            <h2>Pasillos</h2>
             <fieldset>
-                <legend>
-                    <h2>Pasillos</h2>
-                </legend>
+        
                 <div className='pasillo'>
                     <p>
                         <strong>
@@ -391,10 +381,11 @@ function Form() {
                     </div>
                 </div>
             </fieldset>
-            <fieldset>
-                <legend>
-                    <h2>Huecos de paso</h2>
-                </legend>
+            <h2>Huecos de paso</h2>
+            
+         
+                <fieldset>
+
                 <div>
                     <label>
                         Anchura libre de paso de las puertas de entrada (cm)
@@ -427,10 +418,12 @@ function Form() {
                         }
                     />
                 </div>
+                </fieldset>
+                <h2>Puertas de accesos interiores</h2>
+
+            
                 <fieldset>
-                    <legend>
-                        <h3>Puertas de accesos interiores</h3>
-                    </legend>
+ 
                     <p>
                         <strong>
                             Importante : En esta sección deberá tomar medidas de
@@ -581,11 +574,9 @@ function Form() {
                         </div>
                     </div>
                 </fieldset>
-            </fieldset>
+            
+            <h2>Ventanas</h2>
             <fieldset>
-                <legend>
-                    <h2>Ventanas</h2>
-                </legend>
                 <p>
                     <strong>
                         Importante: En este campo se hace refrencia a la altura
@@ -624,7 +615,8 @@ function Form() {
                     Submit
                 </button>
             </div>
-        </div>
+        </div>    
+    </div>
     );
 }
 export default Form;
