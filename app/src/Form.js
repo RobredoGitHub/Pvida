@@ -445,13 +445,13 @@ function Form() {
                             <input
                                 type='checkbox'
                                 name='hueco2'
-                                // value={form.input14}
-                                // onChange={(e) =>
-                                //     setForm((lastValue) => ({
-                                //         ...lastValue,
-                                //         input14: e.target.value,
-                                //     }))
-                                // }
+                                value={form.input14}
+                                onChange={(e) =>
+                                    setForm((lastValue) => ({
+                                        ...lastValue,
+                                        input14: e.target.value,
+                                    }))
+                                }
                             />
                         </div>
                         <div className='apertura'>
@@ -498,17 +498,17 @@ function Form() {
                                     </i>
                                 </label>
 
-                                <input
+                                {/* <input
                                     type='checkbox'
                                     name='hueco6'
-                                  //  value={form.input10}
-                                    // onChange={(e) =>
-                                    //     setForm((lastValue) => ({
-                                    //         ...lastValue,
-                                    //         input10: e.target.value,
-                                    //     }))
-                                    // }
-                                ></input>
+                                   value={form.input10}
+                                    onChange={(e) =>
+                                        setForm((lastValue) => ({
+                                            ...lastValue,
+                                            input10: e.target.value,
+                                        }))
+                                    }
+                                ></input> */}
                                 <br></br>
                                 <label>Anchura de la señalización</label>
                                 <input
@@ -526,17 +526,14 @@ function Form() {
                         </div>
                         <div>
                             <div>
-                                <label>
+                                {/* <label>
                                     <i>
                                         En caso de puertas de doble filo(puerta
                                         doble) con mecanismo automático (puerta
                                         automática)de apertura y cierre, marque
                                         esta casilla
                                     </i>
-                                </label>
-
-
-                                <br></br>
+                                </label> */}
                                 <label>
                                     Anchura máxima de paso entre ellas
                                 </label>

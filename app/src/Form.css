@@ -11,15 +11,14 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    background-color: rgb(237, 237, 217);
 }
 h1 {
     font-size: 60px;
     text-align: center;
-    color: rgb(0, 0, 100);
+    color: rgb(29, 18, 0);
 }
 h2 {
-    color: rgb(12, 31, 48);
+    color: rgb(57, 36, 1);
     font-size: 50px;
     text-align: center;
     margin-top: 1rem;
@@ -52,6 +51,9 @@ p {
     margin-top: 18px;
     margin-bottom: 18px;
 }
+input[type="number"] {
+    margin-left: 2rem;
+}
 input {
     height: 1.2rem;
     width: 8rem;
@@ -61,15 +63,21 @@ input {
     margin-left: 5px;
     margin-right: 5px;
 }
-.submitDiv > button{
-    margin-left: auto;
-    margin-right: auto;
-}
-div.w-33 {
-    width: 33.33%;
-    background-color: orange;
-  }
-  
-  div.center {
+.submitDiv{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
-  }
+}
+.submitDiv button{
+    color: black;
+    border-radius: 10%;
+    background-color: rgb(198, 234, 222);
+    width: 10rem;
+    height: 2rem;
+}
+    .submitDiv button:hover{
+        cursor: pointer;
+        background-color: aquamarine;
+        
+        }
+        
