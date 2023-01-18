@@ -75,9 +75,9 @@ input {
     width: 10rem;
     height: 2rem;
 }
-    .submitDiv button:hover{
-        cursor: pointer;
-        background-color: aquamarine;
+.submitDiv button:hover{
+    cursor: pointer;
+    background-color: aquamarine;
         
         }
         
