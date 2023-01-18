@@ -142,28 +142,22 @@ import { useState } from 'react';
 //     );
 // }
 
-/* function adaptado() {
-    alert('su casa se encuentra adaptada en un 0%');
-    window.location.reload();
-}
- */
 
 const request = async (data) => { 
     const rules = {
-        vestibulo: { min: 150},
-        ventana: { min: 150},
-        pasillos: { min: 120},
-        pasillos1: { min: 100},
-        dormitorio: { min: 150},
-        dormitorio1: { min: 80},
-        dormitorio2: { min: 120},
-        dormitorio3: { min: 120},
-        accesos: { min: 120},
-        accesos1: { min: 5},
-        accesos2: { min: 120},
-        accesos3: { min: 15},
-        accesos4: { min: 80, max: 110},
-        escaleras: { min: 0}
+        input1: { min: 150},
+        input2: { min: 150},
+        input3: { min: 120},
+        input4: { min: 100},
+        input5: { min: 150},
+        input6: { min: 80},
+        input7: { min: 120},
+        input8: { min: 120},
+        input9: { min: 120},
+        input10: { min: 5},
+        input11: { min: 120},
+        input12: { min: 15},
+        input13: { min: 80, max: 110},
     }
     
     
@@ -178,11 +172,14 @@ const request = async (data) => {
         return acc
     }, {})
     
-    
+    console.log(adapted);
     const rate = Object.values(adapted).filter((value) => value === 'adapted')
-    const result = Math.round((rate.length * 100)/14)
+    const result = Math.round((rate.length * 100)/13)
     
-    console.log(`Su vivienda se encuentra adaptado en un ${result}%`);
+    if(alert(`Su vivienda se encuentra adaptado en un ${result}%`)){}
+else    window.location.reload(); 
+  
+  
 
 };
 
@@ -448,7 +445,7 @@ function Form() {
                             <input
                                 type='checkbox'
                                 name='hueco2'
-                                value={form.input14}
+                                // value={form.input14}
                                 onChange={(e) =>
                                     setForm((lastValue) => ({
                                         ...lastValue,
