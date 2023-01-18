@@ -318,7 +318,7 @@ function Form() {
                                 del corredor marque esta casilla...
                             </i>
                         </label>
-                        <input type='checkbox' name='anchuraLibre' id='' />
+ 
                         <br></br>
                         <label>Ancho libre (cm)</label>
                         <input
@@ -340,7 +340,7 @@ function Form() {
                                 marque esta casilla...
                             </i>
                         </label>
-                        <input type='checkbox' name='' id='' />
+
                         <br></br>
                         <label>Anchura mínima del estrechamiento (cm)</label>
                         <input
@@ -446,12 +446,12 @@ function Form() {
                                 type='checkbox'
                                 name='hueco2'
                                 // value={form.input14}
-                                onChange={(e) =>
-                                    setForm((lastValue) => ({
-                                        ...lastValue,
-                                        input14: e.target.value,
-                                    }))
-                                }
+                                // onChange={(e) =>
+                                //     setForm((lastValue) => ({
+                                //         ...lastValue,
+                                //         input14: e.target.value,
+                                //     }))
+                                // }
                             />
                         </div>
                         <div className='apertura'>
@@ -501,13 +501,13 @@ function Form() {
                                 <input
                                     type='checkbox'
                                     name='hueco6'
-                                    value={form.input10}
-                                    onChange={(e) =>
-                                        setForm((lastValue) => ({
-                                            ...lastValue,
-                                            input10: e.target.value,
-                                        }))
-                                    }
+                                  //  value={form.input10}
+                                    // onChange={(e) =>
+                                    //     setForm((lastValue) => ({
+                                    //         ...lastValue,
+                                    //         input10: e.target.value,
+                                    //     }))
+                                    // }
                                 ></input>
                                 <br></br>
                                 <label>Anchura de la señalización</label>
@@ -535,7 +535,7 @@ function Form() {
                                     </i>
                                 </label>
 
-                                <input type='checkbox' name='hueco6'></input>
+
                                 <br></br>
                                 <label>
                                     Anchura máxima de paso entre ellas
